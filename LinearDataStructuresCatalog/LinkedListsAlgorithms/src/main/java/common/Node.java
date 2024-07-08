@@ -1,4 +1,4 @@
-package SinglyLinkedList;
+package common;
 
 public class Node {
     private int data;
