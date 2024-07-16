@@ -6,7 +6,7 @@
 2. [Algoritmos e Complexidades](#2-algoritmos-e-complexidades)
     - [Explicações](#21-explicações)
 3. [Implementação](#3-implementação)
-    - [Classe Node](#31-classe-node)
+    - [Classe common.Node](#31-classe-node)
     - [Operações no início da lista](#32-operações-no-início-da-lista)
         - [Inserção](#321-inserção)
         - [Deleção](#322-deleção)
@@ -60,22 +60,22 @@ Além dos nós que contêm dados, a lista mantém uma referência para o primeir
 - **Busca**: A busca é linear porque, no pior caso, é necessário percorrer toda a lista para encontrar o nó desejado.
 
 ## 3. Implementação
-### 3.1 Classe Node
+### 3.1 Classe common.Node
 
-A classe `Node` representa cada elemento da lista. 
+A classe `common.Node` representa cada elemento da lista.
 
 ```Java
 public class Node {
     private int data;
-    private Node next;
+    private common.Node next;
 }
 ```
  
 Ela armazena os valores: 
 - `data` que representa o dado armazenado no node, neste caso será do tipo `int`; 
-- `next` que será o ponteiro para o nó da adjacente a ele, armazena o próprio objeto `Node`;
+- `next` que será o ponteiro para o nó da adjacente a ele, armazena o próprio objeto `common.Node`;
 
-O construtor `Node(int data)` inicializa um novo nó com o valor de `data` especificado
+O construtor `common.Node(int data)` inicializa um novo nó com o valor de `data` especificado
 e com `next` sendo nulo, portanto não aponta para nenhum outro nó da lista.
 
 ```Java
@@ -84,7 +84,6 @@ public Node(int data) {
     this.next = null;
 }
 ```
-A inserção no início da lista envolve a criação de um novo nó com o dado a ser inserido e atualização do ponteiro `head` para apontar para este novo nó.
 
 ### 3.2 Operações no início da lista
  As operaçãoes no início da lista envolvem encontrar o nó `head` e então manipular
@@ -98,6 +97,8 @@ Para inserir um novo nó no início da lista:
 3. O `head` é atualizado para apontar para o novo nó, tornando-o o novo início da lista encadeada.
 
 ```Java
+import common.Node;
+
 public void insertInHead(int data) {
     Node newNode = new Node(data);
     newNode.setNext(head);
@@ -142,7 +143,10 @@ Passo a Passo da Inserção no Meio da Lista:
 
 
 5. Insere o novo nó após o `slowPointer`, ajustando as referências.
+
 ```Java
+import common.Node;
+
 public void insertInMiddle(int data) {
     Node newNode = new Node(data);
     Node slowPointer = head;
@@ -171,7 +175,10 @@ Passo a Passo da Deleção no Meio da Lista:
 
 
 5. Remove o nó atualizando as referências, fazendo com que `prevSlowPointer` aponte diretamente para o nó seguinte ao `slowPointer`.
+
 ```Java
+import common.Node;
+
 public void deleteFromMiddle() {
     if (head == null || head.getNext() == null) {
         head = null;
@@ -207,7 +214,10 @@ Passo a Passo da Inserção no Fim da Lista:
 
 
 3. Insere o novo nó no final da lista, ajustando a referência do último nó para apontar para o novo nó.
+
 ```Java
+import common.Node;
+
 public void insertInTail(int data) {
     Node newNode = new Node(data);
     if (head == null) {
@@ -237,6 +247,8 @@ Passo a Passo da Deleção do Fim da Lista:
 4. Remove o último nó ajustando a referência do penúltimo nó para `null`.
 
 ```Java
+import common.Node;
+
 public void deleteFromTail() {
     if (head == null || head.getNext() == null) {
         head = null;
@@ -272,6 +284,8 @@ Passo a Passo da Busca:
 5. Retorna `null` se o valor não for encontrado na lista.
 
 ```Java
+import common.Node;
+
 public Node search(int value) {
     Node current = head;
     while (current != null) {

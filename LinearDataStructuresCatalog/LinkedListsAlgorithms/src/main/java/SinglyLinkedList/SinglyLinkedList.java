@@ -1,7 +1,6 @@
 package SinglyLinkedList;
 
-import java.util.LinkedList;
-import java.util.List;
+import common.Node;
 
 public class SinglyLinkedList {
     private Node head;
