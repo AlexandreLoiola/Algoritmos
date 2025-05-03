@@ -1,5 +1,7 @@
 package Stack;
 
+import common.Node;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,16 +30,12 @@ public class Stack {
     }
 
     boolean isEmpty() {
-        if (size <= 0) {
-            return true;
-        } else {
-            return false;
-        }
+        return size <= 0;
     }
 
     int peek() {
         if (isEmpty()) {
-            throw new RuntimeException("Stack is empty. Cannot peek.");
+            throw new RuntimeException("A pilha está vazia. Não pode peek");
         }
         return top.getData();
     }

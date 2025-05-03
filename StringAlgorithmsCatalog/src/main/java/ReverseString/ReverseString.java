@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class ReverseString {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Insira uma String:");
-        String name = scanner.nextLine();
-        System.out.println(reverseStringWithRecursion(name));
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.println("Insira uma String:");
+            System.out.println(reverseStringWithRecursion(scanner.nextLine()));
+        }
     }
 
     public static String reverseStringWithRecursion(String str) {

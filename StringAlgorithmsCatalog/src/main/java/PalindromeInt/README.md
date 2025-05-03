@@ -5,8 +5,8 @@ Este algoritmo tem como objetivo verificar se um número inteiro é um palíndro
 ## Índice
 
 - [Introdução](#1-introdução)
-- [Teoria](#2-teoria)
-- [Exemplo de Execução](#3-exemplo-de-execução)
+- [Teoria](#2-implementação)
+- [Exemplo de Execução](#3-execução)
 - [Conclusão](#4-conclusão)
 
 ## 1. Introdução
@@ -14,8 +14,6 @@ Este algoritmo tem como objetivo verificar se um número inteiro é um palíndro
 Compile e execute a classe `PalindromeInteger`. O programa solicitará que seja inserido um número inteiro e verificará se o número é um palíndromo.
 
 ```java
-import java.util.Scanner;
-
 public class PalindromeInteger {
     public static void main(String args[]) {
         try (Scanner scanner = new Scanner(System.in)) {
@@ -41,7 +39,7 @@ private static boolean isIntPalindrome(int x) {
     if (x < 0) {
         return false; // Números negativos não são palíndromos
     }
-    int originalValue = x;
+    int originalValue = x; 
     int reversedValue = 0;
     while (x != 0) {
         int digit = x % 10; // Obtém o dígito mais à direita
@@ -51,7 +49,7 @@ private static boolean isIntPalindrome(int x) {
     return originalValue == reversedValue;
 }
 ```
-### Explicação:
+### Execução:
 
 1. Se o número for negativo, retorna `false` (números negativos não são considerados palíndromos).
 2. Armazena o valor original do número.

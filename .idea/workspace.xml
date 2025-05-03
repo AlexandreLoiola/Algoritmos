@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="465f30eb-f6cb-4afb-8ab5-74e24496e3f9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/LinearDataStructuresCatalog/LinkedListsAlgorithms/src/main/java/Stack/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/LinearDataStructuresCatalog/LinkedListsAlgorithms/src/main/java/Stack/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinearDataStructuresCatalog/LinkedListsAlgorithms/src/main/java/Stack/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/LinearDataStructuresCatalog/LinkedListsAlgorithms/src/main/java/Stack/Stack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StringAlgorithmsCatalog/src/main/java/PalindromeInt/PalidromeInteger.java" beforeDir="false" afterPath="$PROJECT_DIR$/StringAlgorithmsCatalog/src/main/java/PalindromeInt/PalidromeInteger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StringAlgorithmsCatalog/src/main/java/PalindromeInt/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/StringAlgorithmsCatalog/src/main/java/PalindromeInt/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StringAlgorithmsCatalog/src/main/java/ReverseString/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/StringAlgorithmsCatalog/src/main/java/ReverseString/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StringAlgorithmsCatalog/src/main/java/ReverseString/ReverseString.java" beforeDir="false" afterPath="$PROJECT_DIR$/StringAlgorithmsCatalog/src/main/java/ReverseString/ReverseString.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2ifJ1NKBPFb8TQjZi3k75CU5LTS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PalidromeAnalysis.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ReverseString.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/alexa/Desktop/Programas/1Portfolio/Algoritmos/StringAlgorithmsCatalog&quot;,
+    &quot;mysql-explain.agentPath&quot;: &quot;C:\\Users\\alexa\\AppData\\Roaming\\JetBrains\\IdeaIC2023.3\\plugins\\mysql-explain-intellij-plugin\\lib\\mysql-explain-agent-1.1.1-with-dependencies.jar&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\alexa\Desktop\Programas\1Portfolio\Algoritmos\StringAlgorithmsCatalog" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.PalidromeAnalysis">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="StringAlgorithmsCatalog" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PalidromeAnalysis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PalidromeAnalysis.PalidromeAnalysis" />
+      <module name="StringAlgorithmsCatalog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="PalidromeAnalysis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReverseString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ReverseString.ReverseString" />
+      <module name="StringAlgorithmsCatalog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ReverseString.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.PalidromeAnalysis" />
+        <item itemvalue="Application.ReverseString" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-18.0.2-corretto-18.0.2-4caba194b151-5720f15e" />
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="465f30eb-f6cb-4afb-8ab5-74e24496e3f9" name="Changes" comment="" />
+      <created>1719875482209</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1719875482209</updated>
+    </task>
+    <servers />
+  </component>
+</project>

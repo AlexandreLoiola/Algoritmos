@@ -1,8 +1,18 @@
 # Pilha
 
+1. [Introdução](#1-introdução)
+2. [Algoritmos e Complexidades](#2-algoritmos-e-complexidades)
+    - [2.1 Explicações](#21-explicações)
+3. [Implementação](#3-implementação)
+    - [3.1 Classe Node](#31-classe-node)
+    - [3.2 Push](#32-push)
+    - [3.3 Pop](#33-pop)
+    - [3.4 GetAllElements](#34-getallelements)
+4. [Conclusão](#4-conclusão)
+
 ## 1. Introdução
 
-Uma **pilha** é uma estrutura de dados linear baseada no princípio LIFO (Last In, First Out), onde o último elemento adicionado é o primeiro a ser removido. Essa estrutura é frequentemente implementada usando uma lista encadeada simples. Em uma lista encadeada simples:
+Uma **pilha** é uma estrutura de dados linear baseada no princípio LIFO (Last In, First Out), onde o último elemento adicionado é o primeiro a ser removido. Essa estrutura é frequentemente implementada usando uma lista encadeada simples:
 
 1. **Dados**: Cada elemento, ou nó, contém o dado a ser armazenado. Pode ser qualquer tipo de informação, como um número inteiro, uma string ou até mesmo um objeto complexo.
 
@@ -48,8 +58,8 @@ A classe `Node` representa cada elemento da lista.
 
 ```Java
 public class Node {
-    private int data;
-    private Node next;
+   private int data;
+   private Node next;
 }
 ```
 
@@ -77,11 +87,13 @@ Para adicionar um novo elemento no topo da pilha:
 4. Incrementa-se o tamanho da pilha;
 
 ```Java
+import Node;
+
 void push(int data) {
-    Node newNode = new Node(data);
-    newNode.setNext(top);
-    top = newNode;
-    size++;
+   Node newNode = new Node(data);
+   newNode.setNext(top);
+   top = newNode;
+   size++;
 }
 ```
 ### 3.3 Pop
@@ -112,14 +124,16 @@ Para obter todos os elementos da pilha, utiliza-se o seguinte método:
 4. Retorna-se a lista `elements`, que contém todos os nós da pilha.
 
 ```Java
+import Node;
+
 List<Node> getAllElements() {
-    List<Node> elements = new ArrayList<>();
-    Node current = top;
-    while (current != null) {
-        elements.add(current);
-        current = current.getNext();
-    }
-    return elements;
+   List<Node> elements = new ArrayList<>();
+   Node current = top;
+   while (current != null) {
+      elements.add(current);
+      current = current.getNext();
+   }
+   return elements;
 }
 ```
 

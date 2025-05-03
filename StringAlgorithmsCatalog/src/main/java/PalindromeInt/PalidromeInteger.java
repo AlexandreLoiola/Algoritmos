@@ -2,7 +2,7 @@ package PalindromeInt;
 
 import java.util.Scanner;
 
-public class PalindromeInteger {
+public class PalidromeInteger {
     public static void main(String args[]) {
         try (Scanner scanner = new Scanner(System.in)) {
             System.out.println("Insira um número inteiro: ");
@@ -21,7 +21,7 @@ public class PalindromeInteger {
         int reversedValue = 0;
         while (x != 0) {
             int digit = x % 10;
-            reversedValue = reversedValue * 10 + digit;
+            reversedValue = reversedValue * 10 +  digit;
             x /= 10;
         }
         return originalValue == reversedValue;

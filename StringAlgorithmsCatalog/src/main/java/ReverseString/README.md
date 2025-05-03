@@ -19,12 +19,12 @@ Compile e execute a classe `ReverseString`. O programa solicitará que seja insi
 
 ```java
 public class ReverseString {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Insira uma String:");
-        String name = scanner.nextLine();
-        System.out.println(reverseStringWithRecursion(name));
+  public static void main(String[] args) {
+    try (Scanner scanner = new Scanner(System.in)) {
+      System.out.println("Insira uma String:");
+      System.out.println(reverseStringWithRecursion(scanner.nextLine()));
     }
+  }
 }
 ```
 ## 2. Método 1: Recursão
@@ -106,3 +106,6 @@ Portanto, "Java" é invertido para "avaJ".
 
 ## 4. Conclusão
 Tanto a recursão quanto a iteração são métodos eficazes para inverter uma string. A recursão é mais elegante e fácil de entender conceitualmente, enquanto a iteração é mais eficiente em termos de uso de memória.
+
+Além disso, durante a recursão, cada chamada da função `reverseStringWithRecursion` armazena seu estado na pilha de chamadas, mantendo a string que está processando e esperando que a chamada recursiva retorne. Quando a chamada mais interna (caso base) retorna, cada chamada na pilha é resolvida na ordem inversa, construindo a string invertida gradualmente.
+
